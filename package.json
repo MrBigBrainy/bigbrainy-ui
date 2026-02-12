@@ -1,0 +1,33 @@
+{
+  "name": "bigbrainy-ui",
+  "version": "1.0.0",
+  "description": "UI Library Component for React",
+  "author": "Mr.Big Brainy",
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/components/Toast/index.ts --format esm,cjs --dts"
+  },
+  "keywords": [
+    "react",
+    "toast",
+    "ui",
+    "library",
+    "notification"
+  ],
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  }
+}
